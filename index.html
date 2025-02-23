@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Ana Sayfa</title>
+    <!-- Bootstrap 4.5 CSS linki -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Kendi stil dosyanız varsa buraya ekleyebilirsiniz -->
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <!-- Menü Başlangıcı -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Menü başlığı -->
+        <a class="navbar-brand" href="index.html">Blog</a>
+        <!-- Menü toggle butonu (mobilde açılır menü için) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="post.html">Blog Gönderisi</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Menü Bitişi -->
+
+    <!-- Ana Sayfa Açıklaması (Jumbotron) -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Blog Sayfanıza Hoşgeldiniz!</h1>
+        <p class="lead">Güncel yazılarımız ve ilginç içeriklerle dolu bir blog sayfası.</p>
+        <hr class="my-4">
+        <p>Blog yazılarımızı keşfedin ve fikirlerinizi bizimle paylaşın.</p>
+    </div>
+
+    <!-- Son Gönderiler Bölümü -->
+    <section class="container">
+        <h2>Son Gönderiler</h2>
+
+        <!-- Grid Sistemi Başlangıcı (Blog kartlarını hizalamak için) -->
+        <div class="row">
+            <!-- Blog Gönderisi Kartı 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="./assets/dog.jpg" class="card-img-top" height="300px" alt="Dog">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Gönderisi Başlığı 1</h5>
+                        <p class="card-text">Bu, ilk blog gönderisinin kısa özetidir...</p>
+                        <a href="post1.html" class="btn btn-primary">Devamını oku</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Gönderisi Kartı 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="./assets/cat.jpg" class="card-img-top" height="300px" alt="Cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog Gönderisi Başlığı 2</h5>
+                        <p class="card-text">Bu, ikinci blog gönderisinin kısa özetidir...</p>
+                        <a href="post2.html" class="btn btn-primary">Devamını oku</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Grid Sistemi Sonu -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-4">
+        <p>&copy; 2025 Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- Bootstrap JS ve jQuery linkleri -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
